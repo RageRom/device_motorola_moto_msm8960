@@ -105,7 +105,7 @@ PRODUCT_COPY_FILES += \
 
 # Include 960x540 boot animation in the zip
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/bootanimation/540.zip:system/media/540.zip
+    vendor/slim/prebuilt/common/bootanimation/540.zip:system/media/540.zip
 
 # Misc
 PRODUCT_PROPERTY_OVERRIDES += \
