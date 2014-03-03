@@ -169,7 +169,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("rro.cdma.subscription", "1");
         property_set("DEVICE_PROVISIONED", "1");
         property_set("ro.mot.ignore_csim_appid", "true");
-    } else if (ISMATCH(carrier, "att")) || (strstr(hardware_variant, "Qinara"))) {
+    } else if ((ISMATCH(carrier, "att")) || (strstr(hardware_variant, "Qinara"))) {
         property_set("ro.product.device", "qinara");
         property_set("ro.product.model", "ATRIX HD");
         property_set("ro.build.description", "MB886_att-user 4.1.1 9.8.0Q-97_MB886_FFW-20 27 release-keys");
