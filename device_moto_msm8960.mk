@@ -108,10 +108,13 @@ PRODUCT_COPY_FILES += \
     device/motorola/qcom-common/idc/atmxt-i2c.idc:recovery/root/vendor/firmware/atmxt-i2c.idc \
     vendor/motorola/moto_msm8960/proprietary/etc/firmware/atmxt-r2.tdat:recovery/root/vendor/firmware/atmxt-r2.tdat
 
+<<<<<<< HEAD
 # Include 960x540 boot animation in the zip
 PRODUCT_COPY_FILES += \
     vendor/ose/prebuilt/common/bootanimation/540.zip:system/media/540.zip
 
+=======
+>>>>>>> liquid/kitkat
 # Alternate optional key maps
 PRODUCT_PACKAGES += \
     AsantiKeypad
@@ -149,6 +152,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.fuse_sdcard=true \
     ro.qc.sdk.audio.fluencetype=fluence
+    
+# OTA ID
+PRODUCT_PROPERTY_OVERRIDES += \
+    otaupdater.otaid=liquidmsm8960
 
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
