@@ -146,10 +146,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.fuse_sdcard=true \
     ro.qc.sdk.audio.fluencetype=fluence
     
-# OTA ID
-PRODUCT_PROPERTY_OVERRIDES += \
-    otaupdater.otaid=liquidmsm8960
-
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
