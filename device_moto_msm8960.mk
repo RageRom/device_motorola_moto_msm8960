@@ -83,6 +83,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.sh
+    
+ # Ramdisk overrides
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.qcom.usb.rc:root/init.qcom.usb.rc   
 
 # Ramdisk overrides
 PRODUCT_COPY_FILES += \
@@ -150,10 +154,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.fuse_sdcard=true \
     ro.qc.sdk.audio.fluencetype=fluence
     
-# OTA ID
-PRODUCT_PROPERTY_OVERRIDES += \
-    otaupdater.otaid=liquidmsm8960
-
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
