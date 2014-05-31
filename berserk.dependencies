@@ -1,7 +1,7 @@
 [
   {
     "remote": "slim",
-    "repository": "android_device_qcom_common",
+    "repository": "device_qcom_common",
     "target_path": "device/qcom/common",
     "revision": "kk4.4"
   },
