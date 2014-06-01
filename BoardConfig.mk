@@ -81,7 +81,6 @@ TARGET_OTA_ASSERT_DEVICE := moto_msm8960,xt901,solstice,xt905,smq_u,xt907,scorpi
 
 # Recovery
 TARGET_RECOVERY_NO_MSM_BSP := true
-BOARD_CUSTOM_GRAPHICS := ../../../$(LOCAL_PATH)/graphics.c
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
 BOARD_RECOVERY_SWIPE := true
